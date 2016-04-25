@@ -1,0 +1,281 @@
+
+*{margin: 0;padding: 0; color:#000;}
+a{text-decoration: none!important}
+#conteiner{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;}
+header{
+    background: #fdfff0;
+        padding: 16px 0;
+}
+div.wrapper {
+    overflow: hidden;
+    position: relative;
+    display: table;
+    margin: 0 auto;
+}
+ header div.wrapper figure  img{
+    display: block;
+    padding: 0 20px 0 0;
+    width: auto;
+    margin: 0;
+}
+
+
+.resposta{ color:#FFF;}
+
+.resposta p{margin:10px 0 0 0; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px;}
+.resposta .erro{color:#900; border:3px solid #900; background:#FFEAEA; padding:10px;}
+.resposta .accept{color:#090; border:3px solid #090; background:#E8FFE8; padding:10px;}
+.resposta .load{color:#069; border:3px solid #069; background:#D9ECFF; padding:10px;}
+.resposta .load img{float:left; width:18px; margin-right:8px;}
+
+
+header div.wrapper figure{
+    display: table-cell;
+    width: 10%;
+    vertical-align: middle;
+    padding: 0;
+
+}
+
+header div.wrapper hgroup{
+     display: table-cell;
+    width: auto;
+    text-align: left;
+    vertical-align: middle;
+    padding: 20px 0 20px;
+
+}
+header div.wrapper hgroup h1{  
+    font-size: 52px;
+    line-height: 0.9em;
+    margin: 0;
+    padding: 0 30px 10px;
+    font-weight: bold;
+}
+header div.wrapper hgroup h2{  
+
+font-size: 20px;
+    line-height: 1.1em;
+    margin: 0;
+    padding: 0 30px 0;
+    font-weight: normal;
+}
+
+section{
+        padding: 2% 0 10% 0;
+    min-height: 75%;
+}
+
+section div.socialfloating {
+    position: absolute;
+    top: 1%;
+    left: 0;
+    width: 9%;
+}
+
+#conversion header {
+    background-color: #F48120;
+    background-image:url("../images/Laranja-Pattern-small.jpg");
+    display: block;
+    margin: 0;
+    padding: 30px 30px 20px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#conversion header h2 {
+    display: block;
+    color: #fff;
+    font-size: 27px;
+    font-weight: bold;
+    text-align: left;
+    margin: 0 0 10px 0;
+    padding: 0;
+  
+}
+/*animação da logo*/
+.logomov { animation: animAsterisco 2s  alternate;}
+
+@keyframes animAsterisco {
+  0%, 25% {
+    opacity: 0;
+    transform: translateX(200px) rotate(180deg);
+  }
+  75%, 100% {
+    opacity: 1;
+    transform: translateX(0px) rotate(0deg);
+  }
+}
+
+#conversion header p {
+    display: block;
+     color: #fff;
+    font-size: 16px;
+    line-height: 1.2em;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+#conversion section {
+    display: block; 
+    background-image:url("../images/Laranja-Pattern-small.jpg");
+    margin: 0;
+    padding: 30px 30px 20px;
+    
+}
+.imagemGroud { animation: imagemGroud 2s alternate;}
+
+@keyframes imagemGroud {
+   0%   { 
+    opacity: 0;
+      width: 100px;
+   }
+  
+   100% { 
+      display: block;
+      width: 100%;
+   }
+
+}
+
+
+section div#content.left figure, #container section div#content.left div.figure {
+    margin: 0 0 32px 0;
+    padding: 0 20px 0 0;
+}
+section div#content.left figure img, #container section div#content.left div.figure img {
+    width: 100%;
+}
+
+
+
+
+@media screen and (min-width: 1224px){
+
+.wrapper {
+    width: 1224px!important;
+}
+header div.wrapper figure img{
+        width: 400px;
+        margin-left: 29%;
+}
+section div#content.left {
+    float: left;
+    width: 48%;
+    margin: 1% 1% 1% 10%;
+}
+header div.wrapper hgroup {
+    padding: 20px 0 20px 92px;
+    }
+section div#conversion.right {
+    display: block;
+    margin: 1%;
+    float: right;
+    width: 38%;
+   
+    }
+}
+
+@media screen and (min-width: 904px){
+
+    .wrapper {
+        width: 904px;
+    }
+    #conversion header h2 {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    margin: 0 0 10px 0;
+    padding: 0;
+  
+}
+
+section div#content.left {
+    float: left;
+    width: 48%;
+    margin: 1% 1% 1% 10%;
+}
+section div#conversion.right {
+    display: block;
+    margin: 1%;
+    float: right;
+    width: 38%;
+   
+}
+ 
+   
+}
+
+@media screen and (min-width: 150px) and ( max-width: 650px){
+ 
+    header div.wrapper figure{
+        
+        display: block;
+        text-align: center;
+        margin: 0 15%;
+        vertical-align: middle;
+    
+    }
+    img .dev{
+            position: fixed;
+    right: 42px;
+    /* left: 0; */
+    width: 58px;
+    bottom: 1px;
+    z-index: 1080;
+    }
+
+    header div.wrapper hgroup{
+        
+        display: block;
+
+    }
+
+    section div.socialfloating {
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+
+    header div.wrapper hgroup h1{    font-size: 32px;}
+
+    header div.wrapper hgroup h2{ font-size: 13px;}
+
+    header div.wrapper figure img{
+        width: 260px;
+        margin: 0 auto;
+        vertical-align: middle;
+    }
+
+    section div#content.left figure{   padding: 0 0 0 0;}
+    #social-share {
+    display: none;
+    }
+    #conversion{
+        padding: 0 0 20px 0;
+    }
+    section{
+        padding: 2% 0 10% 0;
+        min-height: 75%;
+    }
+     img{width: 150px}
+    div.left{
+        padding:  0 10px
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
