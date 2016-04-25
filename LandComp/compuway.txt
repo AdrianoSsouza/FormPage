@@ -1,0 +1,28 @@
+===Base de Dados compuway
+
+== Estrutura da tabela leads
+
+|------
+|Coluna|Tipo|Nulo|Predefinido
+|------
+|//**id**//|int(11)|Não|
+|nome|varchar(90)|Não|
+|email|varchar(90)|Não|
+|telefone|varchar(20)|Não|
+|cadastro|timestamp|Não|CURRENT_TIMESTAMP
+== Extraindo dados da tabela leads
+
+|1|adriano|adrianossouza.as@gmail.com|(12) 12121-2211|2016-03-13 22:45:22
+== Estrutura da tabela users
+
+|------
+|Coluna|Tipo|Nulo|Predefinido
+|------
+|//**id**//|int(11)|Não|
+|nome|varchar(25)|Não|
+|username|varchar(255)|Não|
+|email|varchar(255)|Não|
+|senha|varchar(255)|Não|
+== Extraindo dados da tabela users
+
+|1|adriano|silva|adrianossouza.as@gmail.com|12
